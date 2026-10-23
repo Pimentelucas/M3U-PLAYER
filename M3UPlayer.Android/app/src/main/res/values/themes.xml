@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- O visual é todo em Compose; este tema só evita o "flash" branco ao abrir. -->
+    <style name="Theme.M3UPlayer" parent="android:Theme.Material.NoActionBar">
+        <item name="android:windowBackground">@color/bg</item>
+        <item name="android:statusBarColor">@color/bg</item>
+        <item name="android:navigationBarColor">@color/bg</item>
+    </style>
+
+    <style name="Theme.M3UPlayer.Player">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <color name="bg">#FF0F0E17</color>
+    <color name="accent">#FF7B5BF5</color>
+</resources>

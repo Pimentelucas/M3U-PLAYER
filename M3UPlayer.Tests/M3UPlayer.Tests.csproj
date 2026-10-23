@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <!-- Testes do parser M3U e do motor de downloads (servidor HTTP local). Rode com: dotnet run -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF> <!-- o cache de imagens usa tipos do WPF -->
+    <UseAppHost>false</UseAppHost>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="LibVLCSharp" Version="3.10.2" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.24" />
+    <Compile Include="..\M3UPlayer\Services\*.cs" />
+    <Compile Include="..\M3UPlayer\Models\*.cs" />
+    <Compile Include="..\M3UPlayer\GlobalUsings.cs" />
+  </ItemGroup>
+</Project>

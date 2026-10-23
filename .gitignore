@@ -1,0 +1,28 @@
+# ── .NET / Visual Studio ──
+bin/
+obj/
+.vs/
+*.user
+*.suo
+
+# ── Android / Gradle ──
+.gradle/
+build/
+.idea/
+*.iml
+.cxx/
+.externalNativeBuild/
+captures/
+# Caminho do Android SDK e configurações deste PC (cada um tem o seu)
+local.properties
+
+# ── Pacotes gerados e chaves de assinatura (nunca suba as chaves) ──
+*.apk
+*.aab
+*.keystore
+*.jks
+dist/
+
+# ── Sistema ──
+Thumbs.db
+.DS_Store
